@@ -16,8 +16,6 @@ particle_program = context.program(
     vertex_shader='''
         #version 330
 
-        #define M_PI 3.1415926535897932384626433832795
-
         uniform mat4 projection;
         uniform mat4 view;
         uniform vec3 light;

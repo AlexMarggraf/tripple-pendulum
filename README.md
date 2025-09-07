@@ -1,3 +1,11 @@
+---
+## Disclaimer
+
+This repository is an experimental project exploring the possibilities of using Python with shaders (`glumpy` and `moderngl`).  
+It is not a finished product and may contain incomplete features, rough code, or temporary implementations.  
+Use it as a learning reference or sandbox — not as production-ready software.
+---
+
 # Simulation Setup and Execution
 
 ## 1. Create and Activate a Python Virtual Environment
@@ -34,5 +42,5 @@ Run the main file for your chosen version.
 The `moderngl` version outputs images that must be compiled into a video. For example you can use `ffmpeg` for this:
 
 ```bash
-ffmpeg -framerate 30 -i ./frames/frame_%04d.png -c:v libx264 -pix_fmt yuv420p output.mp4
+ffmpeg -framerate 30 -i ./frames/frame_%03d.png -c:v libx264 -pix_fmt yuv420p output.mp4
 ```
